@@ -39,15 +39,15 @@ public class ProdutoDao {
 			stm.setDouble(5, produto.getValorCompra()); 
 			
 			//executar comando SQL
-			stm.executeUpdate();			
-		public Produto pesquisar(int id) {
+//			stm.executeUpdate();			
+//		public Produto pesquisar(int id) {
 		
-			String linha;
-			produto.readLine(); //pular a primeira linha 
-			//Ler as linhas do arquivo
-			while ((linha = produto.readLine()) != null) {
-				//Recupera os valores da linha separando pela ,
-				String[] valores = linha.split(",");
+			// String linha;
+			// produto.readLine(); //pular a primeira linha 
+			// //Ler as linhas do arquivo
+			// while ((linha = produto.readLine()) != null) {
+			// 	//Recupera os valores da linha separando pela ,
+			// 	String[] valores = linha.split(",");
 		
 			
 			
@@ -58,13 +58,22 @@ public class ProdutoDao {
 			
 			
 			
-			
-			
-			
-	// Pubic List<Produto> listar(){
-		//	return null;
-			
-			
+public List <Produto> listar(int id) {
+	return null;
+
+	while (result.next()) {
+		//Recuperar os valores dos campos de cada registro
+		int codigo = produto.getCodigo();
+		String nome = produto.getNome();
+		double venda = produto.getValorVenda();
+		double compra = produto.getValorCompra();
+		
+		//Imprimir os valores
+		System.out.println(codigo + " " + nome + 
+				" estoque: " + estoque + " Vl Compra: " + compra 
+				+ " Vl Venda: " + venda);
+		System.out.println("Banco populado com sucesso!");
+
 			
 			
 			
