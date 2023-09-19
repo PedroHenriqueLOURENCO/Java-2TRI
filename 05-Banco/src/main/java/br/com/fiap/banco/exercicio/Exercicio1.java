@@ -15,7 +15,7 @@ public class Exercicio1 {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			Connection conn = DriverManager.getConnection(
 					"jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl",
-					"pf0392", "fiap");
+					"rm98402", "fiap");
 			
 			//Abrir o arquivo
 			FileReader input = new FileReader("alunos.csv");

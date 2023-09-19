@@ -9,13 +9,13 @@ public class Terminal {
 	public static void main(String[] args) {
 		
 		//Instanciar um produto (a ideia é que o usuário informe os dados)
-		Produto produto = new Produto(1, "Chocolate", 10, 2, 1);
+		Produto produto = new Produto(5, "Caminhao", 1, 200000,	300000);
 		
 		//Instanciar o objeto que é capaz de realizar as ações no banco de dados
 		ProdutoDao dao = new ProdutoDao();
 
 		//Gravar no banco
 		dao.cadastrar(produto);
-		
+	
 	}
 }
